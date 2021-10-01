@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "nombre":"lenovo",
+        "marca":"lenovo",
+        "categoria":"comoputador",
+        "subcategoria":"comoputador-lineagamer",
+        "descripcion":"",
+        "precio":198.58,
+        "imagen":"imagenes/nombre.jpg"
+    },
+    {
+        "id": "1",
+        "nombre":"lenovo",
+        "marca":"lenovo",
+        "categoria":"monitores",
+        "subcategoria":"monitores-comerciales",
+        "descripcion":"",
+        "precio":198.58,
+        "imagen":"imagenes/nombre.jpg"
+    }
+]
