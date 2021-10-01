@@ -19,34 +19,30 @@ $numero = mysqli_num_rows($buscardor); ?>
 <?php while ($producto = mysqli_fetch_assoc($buscardor)) { ?>
 
 
+    <div class="col-lg-12 tm-bg-black-transparent ">
 
-    <form action="" method="POST" class="formCard tm-call-to-action-form">
+        <div class="container" style="width: 100%; height: 175px ">
+            <button onclick="location.href='php/mostrarCarrito.php'">
+                <div class="w-45 h-100 my-auto  p-5 productImagen">
+                    <img src="../php/<?php echo $producto['imagen'] ?>" alt="<?php echo $producto['nombre'] ?>" style="width: 70px; height: 70px;">
+                </div>
 
-        <input class="imputDisplay" name="id" id="id" value="<?php echo (openssl_encrypt($producto['id'], COD, KEY)); ?>">
-        <br>
-
-        <input class="imputDisplay" name="nombre" id="nombre" value="<?php echo (openssl_encrypt($producto['nombre'], COD, KEY)); ?>">
-        <br>
-
-        <input class="imputDisplay" name="marca" id="marca" value="<?php echo (openssl_encrypt($producto['marca'], COD, KEY)); ?>">
-        <br>
-
-        <input class="imputDisplay" name="categoria" id="categoria" value="<?php echo (openssl_encrypt($producto['categoria'], COD, KEY)); ?>">
-        <br>
-
-        <input class="imputDisplay" name="precio" id="precio" value="<?php echo (openssl_encrypt($producto['precio'], COD, KEY)); ?>">
-        <br>
-
-        <input class="imputDisplay" name="imagen" id="imagen" value="<?php echo (openssl_encrypt($producto['imagen'], COD, KEY)); ?>">
-        <br>
-
-        <input class="imputDisplay" name="cantidad" id="cantidad" value="<?php echo (openssl_encrypt(1, COD, KEY)) ?>" ;>
-        <br>
-
-        <div class="btnContent" style="position: absolute; ">
-            <button type="submit" style="position: absolute; text-align: center; justify-content: center;" class="btn btnCard" name="btnAccion" value="Agregar" type="submit">
-                Agregar
             </button>
+            <div class="w-25 h-100 my-auto productNombre">
+                <h5 style="line-height: 160px"><?php echo $producto['nombre'] ?></h5>
+            </div>
+
+            <div class="w-25 h-100 my-auto  productPrecio">
+                <h5 style="line-height: 160px">$ <?php echo $producto['precio'] ?></h5>
+            </div>
+
+            <div class="w-5 h-100 my-auto productDelete">
+                <form action="" method="POST">
+                    <input type="hidden" id="id" name="id" value="<?php echo (openssl_encrypt($producto['id'], COD, KEY)); ?>">
+                    <button type="submit" name="btnAccion" value="Eliminar" style="border: none; line-height: 160px; background:transparent;"><i class="fas fa-trash-alt" style=" font-size: 25px; color:#E7264C "></i></button>
+                </form>
+            </div>
         </div>
-    </form>
+    </div>
+
 <?php } ?>

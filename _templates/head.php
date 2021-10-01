@@ -50,7 +50,7 @@ include "../_global/config.php";
             <div class="row tm-brand-row">
                 <div class="col-lg-4 col-11">
                     <div class="tm-brand-container tm-bg-white-transparent">
-                        <button onclick="location.href='index.php'" style="background-color: transparent; border: none;">
+                        <button onclick="location.href='../index.php'" style="background-color: transparent; border: none;">
                             <i class="fas fa-3x text-center py-2 fa-pen tm-brand-icon"></i>
                         </button>
                         <div class="tm-brand-texts">
