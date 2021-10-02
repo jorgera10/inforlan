@@ -18,23 +18,41 @@ include "_global/conexion.php";
   <link rel="stylesheet" href="css/templatemo-style.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/personalizado.css">
 
 </head>
 
+
 <body id="aboutPage">
+
+  <!--boton flotante-->
+  <div class="containerButon">
+      <input type="checkbox" id="btn-mas">
+      <div class="redes">
+          <a href="php/mostrarCarrito.php" class="fas fa-store"></a>
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-instagram"></a>
+      </div>
+      <div class="btn-mas">
+          <label for="btn-mas" class="fa fa-plus"></label>
+      </div>
+  </div>
 
   <div class="parallax-window" data-parallax="scroll" data-image-src="img/bg-01.jpg">
     <div class="container-fluid">
       <div class="row tm-brand-row">
         <div class="col-lg-4 col-11">
           <div class="tm-brand-container tm-bg-white-transparent">
-            <i class="fas fa-3x text-center py-2 fa-pen tm-brand-icon"></i>
+            <button onclick="location.href='index.php'" style="background-color: transparent; border: none;">
+              <i class="fas fa-3x text-center py-2 fa-pen tm-brand-icon"></i>
+            </button>  
             <div class="tm-brand-texts">
-              <h1 class="text-uppercase tm-brand-name">Intforlan</h1>
+              <h1 class="text-uppercase tm-brand-name"><a href="index.php" style="color: #7b7579;">Intforlan</a></h1>
               <p class="small">Somos tu mejor opción</p>
             </div>
           </div>
         </div>
+        
         <div class="col-lg-8 col-1">
           <div class="tm-nav">
             <nav class="navbar navbar-expand-lg navbar-light tm-bg-white-transparent tm-navbar">
@@ -75,10 +93,16 @@ include "_global/conexion.php";
       <!-- Catalogo -->
 
       <section class="row" id="tmAbout">
-        <header class="col-12 tm-about-header">
-          <h2 class="text-uppercase text-center text-dark tm-about-page-title">Catalogo</h2>
-          <hr class="tm-about-title-hr">
-        </header>
+        
+        <div class="container">
+          <div class="col-12">
+            <div class="mb-3">
+              <input onkeyup="buscar_ahora($('#buscar_1').val());" type="text" class="form-control" id="buscar_1" placeholder="Que estas buscando?" name="buscar_1">
+            </div>
+            <div id="datos_buscador" class="container pl-5 pr-5" style="display: flex;"> </div>
+
+          </div>
+        </div>
 
         <div class="col-lg-4">
           <div class="tm-bg-black-transparent tm-about-box">

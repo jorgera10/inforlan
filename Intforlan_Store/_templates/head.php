@@ -1,6 +1,6 @@
 <?php
-    include "../_global/conexion.php";
-    include "../_global/config.php";
+include "../_global/conexion.php";
+include "../_global/config.php";
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Computadoras</title>
     <link rel="stylesheet" href="../../bootstrap-5.1.1-dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
     <link rel="stylesheet" href="../css/all.min.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/templatemo-style.css" />
@@ -27,22 +27,22 @@
 
 <!--boton flotante-->
 <div class="containerButon">
-        <input type="checkbox" id="btn-mas">
-        <div class="redes">
-            <a href="../php/mostrarCarrito.php" class="fas fa-store"></a>
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-instagram"></a>
-        </div>
-        <div class="btn-mas">
-            <label for="btn-mas" class="fa fa-plus"></label>
-        </div>
+    <input type="checkbox" id="btn-mas">
+    <div class="redes">
+        <a href="../php/mostrarCarrito.php" class="fas fa-store"></a>
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-instagram"></a>
     </div>
+    <div class="btn-mas">
+        <label for="btn-mas" class="fa fa-plus"></label>
+    </div>
+</div>
 
-    <!--***********BODY********************-->
+<!--***********BODY********************-->
 
 <body id="aboutPage">
 
-    
+
 
     <!--       b ody                 -->
     <div class="parallax-window" data-parallax="scroll" data-image-src="../img/bg-01.jpg">
@@ -50,9 +50,11 @@
             <div class="row tm-brand-row">
                 <div class="col-lg-4 col-11">
                     <div class="tm-brand-container tm-bg-white-transparent">
-                        <i class="fas fa-3x text-center py-2 fa-pen tm-brand-icon"></i>
+                        <button onclick="location.href='../index.php'" style="background-color: transparent; border: none;">
+                            <i class="fas fa-3x text-center py-2 fa-pen tm-brand-icon"></i>
+                        </button>
                         <div class="tm-brand-texts">
-                            <h1 class="text-uppercase tm-brand-name">Intforlan</h1>
+                            <h1 class="text-uppercase tm-brand-name"><a href="../index.php" style="color: #7b7579;">Intforlan</a></h1>
                             <p class="small">Somos tu mejor opción</p>
                         </div>
                     </div>
