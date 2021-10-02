@@ -48,7 +48,9 @@ if ($_POST) {
                 <p class="tm-app-feature-description"><?php echo $correo ?></p>
                 <p style="text-align: justify;">
                     Su pedido esta ingresado exitosamente,
-                    debe sequir las siguientes instrucciones
+                    estas a un paso de completar tu compra!
+                    <br>
+                    Sigue las siguientes instrucciones
                     para finalizar su compra:
                     Una vez que realice el Depósito o Transferencia Bancaria a
                     estos datos, envíe una foto del comprobante bancario a
