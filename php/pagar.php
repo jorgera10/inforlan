@@ -57,7 +57,7 @@ if ($_POST) {
                     <br>
                     BANCO PICHINCHA
                     <br> Cuenta AHORROS: 2204418816
-                    <br> Adrian Nathaniel Mosquera Gonzales
+                    <br> Adrian Nathaniel Mosquera Gonzalez
                     <br> C.I: 1723518294
                     <br> intforlanempresa@gmail.com
                     <br> Teléfono: 097 897 1466
