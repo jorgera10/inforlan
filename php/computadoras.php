@@ -51,6 +51,8 @@ include "carrito.php"
                     <?php echo $producto['precio']; ?>
                 </h4>
 
+                <!--Recolectando el ID-->
+                <a href="../_archivos/informacion.php?id=<?php echo $producto['id'] ?>">info</a>
 
                 <form action="" method="POST" class="formCard tm-call-to-action-form">
 
@@ -79,7 +81,9 @@ include "carrito.php"
                         <button type="submit" style="position: absolute; text-align: center; justify-content: center;" class="btn btnCard" name="btnAccion" value="Agregar" type="submit">
                             Agregar
                         </button>
+
                     </div>
+
                 </form>
             </div>
         </div>
