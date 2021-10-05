@@ -24,10 +24,10 @@ include "carrito.php";
 
                 <div class="container" style="width: 100%; height: 175px ">
                     <div class="w-45 h-100 my-auto  p-5 productImagen">
-                        <img src="../../php/<?php echo $producto['imagen'] ?>" alt="<?php echo $producto['nombre'] ?>" style="width: 70px; height: 70px;">
+                        <img  src="https://github.com/intforlan/IntforlanImages/blob/master/<?php echo $producto['nombre']?>_I1.jpg?raw=true"" alt="<?php echo $producto['nombre'] ?>" style="width: 70px; height: 70px;">
                     </div>
                     <div class="w-25 h-100 my-auto productNombre">
-                        <h5 style="line-height: 160px"><?php echo $producto['nombre'] ?></h5>
+                        <h5 style="line-height: 160px"><?php echo $producto['marca'] ?></h5>
                     </div>
 
                     <div class="w-25 h-100 my-auto  productPrecio">

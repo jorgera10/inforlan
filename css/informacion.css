@@ -54,7 +54,6 @@ body{
 }
 
 .producto-texto p{
-    height: 125px;
     margin-left: 38px;
     font-family: serif;
     color: #8d8d8d;
@@ -69,7 +68,7 @@ body{
     align-items: center;
 }
 
-.volverAtras a{
+.volverAtras button{
     height: 50px;
     width: 176px;
     display: flex;
@@ -84,6 +83,7 @@ body{
     cursor: pointer
     ;
 }
+
 
 @media (max-width: 900px) { 
     .presentacion{
@@ -117,4 +117,9 @@ body{
         color:  #474747;
     }
 
+}
+
+
+.imputDisplay{
+    display: none;
 }
