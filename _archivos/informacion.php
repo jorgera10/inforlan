@@ -48,7 +48,7 @@ $imageNombre = 'opcion_fondo4.jpg';
                     <img class="imgItem" src="https://github.com/jorgera10/AprendiendoGit/blob/master/<?php echo $nombre?>.jpg?raw=true" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img class="imgItem" src="https://github.com/jorgera10/AprendiendoGit/blob/master/opcion_fondo4.jpg?raw=true" class="d-block w-100" alt="...">
+                    <img class="imgItem" src="https://github.com/jorgera10/AprendiendoGit/blob/master/<?php echo $nombre?>.jpeg?raw=true" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -60,7 +60,7 @@ $imageNombre = 'opcion_fondo4.jpg';
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="producto-info">
+        <div class="producto-info  tm-bg-black-transparent">
             <div class="producto-texto">
                 <h1><?php echo $nombre ?></h1>
                 <h2><?php echo $marca ?></h2>

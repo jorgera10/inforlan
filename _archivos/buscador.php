@@ -21,7 +21,7 @@ $numeroProductos = mysqli_num_rows($result);
 <?php
 
 if ($numero == $numeroProductos) {
-    echo '.';
+    echo ' ';
 } else {
     while ($producto = mysqli_fetch_assoc($buscardor)) { ?>
         <div class="col-lg-12 tm-bg-black-transparent ">

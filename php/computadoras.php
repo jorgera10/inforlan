@@ -26,9 +26,9 @@ include "carrito.php"
     <?php foreach ($listaProductos as $producto) { ?>
 
         <div class="container col-12 col-xl-3 col-sm-5 col-md-4 col-lg-3 col-xl-2  mb-5">
-            <div class="card tm-bg-black-transparent">
+            <div class="card tm-bg-black-transparent contenedor">
 
-                <img alt=" <?php echo $producto['nombre']; ?>" title="<?php echo $producto['nombre']; ?>" src="../../php/<?php echo $producto['imagen']; ?>" data-content=<?php echo $producto['descripcion']; ?>>
+                <a href="../_archivos/informacion.php?id=<?php echo $producto['id'] ?>"><img alt=" <?php echo $producto['nombre']; ?>" title="<?php echo $producto['nombre']; ?>" src="../../php/<?php echo $producto['imagen']; ?>" data-content=<?php echo $producto['descripcion']; ?>></h3></a>
 
                 <div class="accordion accordion-flush tm-bg-black-transparent" id="accordionFlushExample">
                     <div class="accordion-item">
@@ -46,13 +46,13 @@ include "carrito.php"
                 </div>
                 <br>
 
-                <h3><?php echo $producto['nombre']; ?></h3>
+                <a href="../_archivos/informacion.php?id=<?php echo $producto['id'] ?>"><h3><?php echo $producto['nombre']; ?></h3></a>
+                
                 <h4 class="btnPrecio tm-about-description justify-content-end"> $
                     <?php echo $producto['precio']; ?>
                 </h4>
 
                 <!--Recolectando el ID-->
-                <a href="../_archivos/informacion.php?id=<?php echo $producto['id'] ?>">info</a>
 
                 <form action="" method="POST" class="formCard tm-call-to-action-form">
 
@@ -73,12 +73,14 @@ include "carrito.php"
 
                     <input class="imputDisplay" name="imagen" id="imagen" value="<?php echo (openssl_encrypt($producto['imagen'], COD, KEY)); ?>">
                     <br>
+                    <input class="imputDisplay" name="fecha" id="fecha" value="<?php echo (openssl_encrypt($producto['fecha'], COD, KEY)); ?>">
+                    <br>
 
                     <input class="imputDisplay" name="cantidad" id="cantidad" value="<?php echo (openssl_encrypt(1, COD, KEY)) ?>" ;>
                     <br>
 
                     <div class="btnContent" style="position: absolute; ">
-                        <button type="submit" style="position: absolute; text-align: center; justify-content: center;" class="btn btnCard" name="btnAccion" value="Agregar" type="submit">
+                        <button type="submit" style="position: absolute; text-align: center; justify-content: center;" onclick="alerta()" class="btn btnCard" name="btnAccion" value="Agregar" type="submit">
                             Agregar
                         </button>
 

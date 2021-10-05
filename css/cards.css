@@ -34,13 +34,18 @@
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
+
 .container .card img{
     width: 100%;
-    max-width: 330px;
+    max-width: 330px;   
     height: 220px;
     max-height: 250px;
 }
 
+
+.container .card img:hover{
+    filter: blur(6px);
+}
 
 .container .card h4{
     padding: 5px;
@@ -82,5 +87,4 @@
 .btnPrecio{
     color: rgba(121, 235, 153, 0.953);
 }
-
 

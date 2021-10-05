@@ -73,13 +73,6 @@ if (isset($_POST['btnAccion'])) {
                 $mensaje = "Producto agregado al carrito";
             } else {
 
-                $idProductos = array_column($_SESSION['CARRITO'], "id");
-
-                if (in_array($id, $idProductos)) {
-                    echo "<script>alert('El producto ya se encuentra en el carrito')</script>";
-                } else {
-
-
                     $NumeroProductos = count($_SESSION['CARRITO']);
                     $producto = array(
                         'id' => $id,
@@ -93,7 +86,7 @@ if (isset($_POST['btnAccion'])) {
                     );
                     $_SESSION['CARRITO'][$NumeroProductos] = $producto;
                     $mensaje = "Producto agregado al carrito";
-                }
+                
             }
 
 

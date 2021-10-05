@@ -1,7 +1,7 @@
 <?php
 include "../_global/config.php";
 include "../_global/conexion.php";
-include "carrito.php"
+include "carrito.php";
 ?>
 
 <?php include "../_templates/head.php" ?>
@@ -43,13 +43,14 @@ include "carrito.php"
                 </div>
             </div>
 
-
+            
             <?php $total = $total + ($producto['precio'] * $producto['cantidad']) ?>
-
-        <?php } ?>
-
-
-        <table class="tm-bg-black-transparent ">
+            
+            <?php } ?>
+            
+        </section>
+        <br>
+        <table class="tm-bg-black-transparent col-12">
             <td colspan="9" align="left">
                 <h3>Total</h3>
             </td>
@@ -59,7 +60,9 @@ include "carrito.php"
         </table>
         <br>
         <br>
+            <div class="espacioBlanco h-20 w-20">
 
+            </div>
         <div class="row">
             <header class="col-12 text-center text-white tm-bg-black-transparent p-3 tm-app-header">
                 <h2 class="text-uppercase mb-2 tm-app-feature-header">Datos Personales</h2>
@@ -90,7 +93,6 @@ include "carrito.php"
                 </div>
             </form>
         </div>
-    </section>
 
 
 <?php } else { ?>

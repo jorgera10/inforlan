@@ -61,7 +61,7 @@ if ($_POST) {
                     <br> Cuenta AHORROS: 2204418816
                     <br> Adrian Nathaniel Mosquera Gonzalez
                     <br> C.I: 1723518294
-                    <br> intforlanempresa@gmail.com poner el nuevo correo
+                    <br> <a href="mailto:intforlanempresa@gmail.com?Subject=compra%20de%20productos%20mail&body=Este%20es%20el%20cuerpo%20del%20mensaje">intforlanempresa@gmail.com</a> poner el nuevo correo
                     <br> Teléfono: 097 897 1466
 
                     El depósito lo puede hacer en un Banco Pichincha "Mi

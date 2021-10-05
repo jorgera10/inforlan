@@ -18,8 +18,8 @@ include "../_global/config.php";
     <link rel="stylesheet" href="../css/templatemo-style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/personalizado.css">
-    <link rel="stylesheet" href="../css/cards.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/cards.css">
 
 
 </head>
@@ -85,7 +85,7 @@ include "../_global/config.php";
                                     </li>
                                     <li class="nav-item">
                                         <div class="tm-nav-link-highlight"></div>
-                                        <a class="nav-link" href="../contact.html">Contacto</a>
+                                        <a class="nav-link" href="../php/mostrarCarrito.php">En Carrito (<?php echo (empty($_SESSION['CARRITO']))?0: count($_SESSION['CARRITO']); ?>)</a>
                                     </li>
                                 </ul>
                             </div>
